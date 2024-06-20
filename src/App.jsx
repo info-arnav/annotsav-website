@@ -1,7 +1,9 @@
+import Carousel from "./components/Carousel"
+import './index.css'
 function App() {
   return (
     <>
-      <h2>Annotsav </h2>
+      <Carousel />
       {/* import any component you are working on */}
     </>
   )
