@@ -19,16 +19,14 @@ function Carousel() {
 
       if (item.classList.contains("opacity-100")) {
         item.classList.remove("opacity-100")
-      }
-      if (item.id == btnId) {
-        item.classList.add("opacity-100")
-      }
-      if (item.id == 1 && btnId != 1) {
-        console.log("hey")
-        item.classList.remove("opacity-100")
         item.classList.add("opacity-75")
       }
+      if (item.id == btnId) {
+        item.classList.remove("opacity-75")
+        item.classList.add("opacity-100")
+      }  
     })
+ 
   }
   const carouselContainerRef = useRef(null)
   const btnContainerRef = useRef(null)

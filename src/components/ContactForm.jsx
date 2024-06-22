@@ -41,7 +41,7 @@ function ContactForm() {
               type="text"
               id="name"
               placeholder="Subject"
-              autoFocus
+            
               required
               className=" input p-2 w-full mb-2 mt-2"
             />

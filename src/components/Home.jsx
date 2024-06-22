@@ -1,6 +1,9 @@
 import Carousel from "./Carousel";
-
+import { useEffect } from "react";
 function Home() {
+  useEffect (()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div>
       <div className="bg-[url('/src/assets/images/bg-image.jpg')] bg-center bg-no-repeat bg-cover relative h-[50%] px-[2%] py-[20%]">
@@ -30,7 +33,7 @@ function Home() {
       />
       <img src="src/assets/images/playstore.png" className="h-16 inline" />
       <Carousel />
-      <div className="py-[5%] mx-2">
+      <div className="py-[5%] mx-10">
         <h1 className="font-bold font-montserrat text-5xl text-center">
           Transforming Indian Agricultural
           <br />

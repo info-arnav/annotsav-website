@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function Footer() {
   return (
     <div>
@@ -11,35 +13,35 @@ function Footer() {
           <div className="col-span-2 font-montserrat font-bold pb-[20%]">
             QUICK LINKS
           </div>
-          <a className="font-raleway font-sm font-light py-[12%]">Home</a>
-          <a className="font-raleway font-sm font-light pl-[23%] py-[12%]">
+          <NavLink className="font-raleway font-sm font-light py-[12%]" to={"/"}>Home</NavLink>
+          <NavLink className="font-raleway font-sm font-light pl-[23%] py-[12%]" to={"/organisation"}>
             Organisation
-          </a>
-          <a className="font-raleway font-sm font-light py-[12%]">Contact Us</a>
-          <a className="font-raleway font-sm font-light pl-[23%] py-[12%]">
+          </NavLink>
+          <NavLink className="font-raleway font-sm font-light py-[12%]" to={"contact"}>Contact Us</NavLink>
+          <NavLink className="font-raleway font-sm font-light pl-[23%] py-[12%]" to={'/volunteer'}>
             Volunteer
-          </a>
-          <a className="font-raleway font-sm font-light py-[12%]">Survey</a>
-          <a className="font-raleway font-sm font-light pl-[23%] py-[12%]">
+          </NavLink>
+          <NavLink className="font-raleway font-sm font-light py-[12%]">Survey</NavLink>
+          <NavLink className="font-raleway font-sm font-light pl-[23%] py-[12%]" to={'/contact'}>
             Reach Us
-          </a>
+          </NavLink>
         </div>
         <div className="inline-grid grid-cols-1 text-white pl-[13%] py-[5%] gap-[25%]">
           <div className="font-montserrat font-bold text-center">
             DOWNLOAD APP
           </div>
-          <a href="/">
+          <NavLink to="/">
             <img
               src="src/assets/images/PlaystoreTransparent.png"
               className="max-h-12"
             />
-          </a>
-          <a href="/">
+          </NavLink>
+          <NavLink to="/">
             <img
               src="src/assets/images/AppStoreTransparent.png"
               className="max-h-12"
             />
-          </a>
+          </NavLink>
         </div>
         <div className="inline-grid grid-cols-1 text-white pl-[13%] py-[4%] max-w-[28%]">
           <img src="src/assets/images/logo.png" className="h-14" />
