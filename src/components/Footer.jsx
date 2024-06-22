@@ -1,5 +1,16 @@
 import { NavLink } from "react-router-dom";
 
+import PlaystoreTransparent from "../assets/images/PlaystoreTransparent.png"
+import AppStoreTransparent from "../assets/images/AppStoreTransparent.png"
+import logo from "../assets/images/logo.png"
+import LocationMarkerTransparent from "../assets/images/LocationMarkerTransparent.png"
+import PhoneTransparent from "../assets/images/PhoneTransparent.png"
+import MailTransparent from "../assets/images/MailTransparent.png"
+
+
+
+
+
 function Footer() {
   return (
     <div>
@@ -32,36 +43,36 @@ function Footer() {
           </div>
           <NavLink to="/">
             <img
-              src="src/assets/images/PlaystoreTransparent.png"
+              src={PlaystoreTransparent}
               className="max-h-12"
             />
           </NavLink>
           <NavLink to="/">
             <img
-              src="src/assets/images/AppStoreTransparent.png"
+              src={AppStoreTransparent}
               className="max-h-12"
             />
           </NavLink>
         </div>
         <div className="inline-grid grid-cols-1 text-white pl-[13%] py-[4%] max-w-[28%]">
-          <img src="src/assets/images/logo.png" className="h-14" />
+          <img src={logo} className="h-14" />
           <div className="font-raleway font-thin pt-[15%] pb-[7%]">
             <img
-              src="src/assets/images/LocationMarkerTransparent.png"
+              src={LocationMarkerTransparent}
               className="h-6 inline pr-2"
             />
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </div>
           <div className="font-raleway font-thin pb-[7%]">
             <img
-              src="src/assets/images/PhoneTransparent.png"
+              src={PhoneTransparent}
               className="h-6 inline pr-2"
             />
             999999999
           </div>
           <div className="font-raleway font-thin pb-[7%]">
             <img
-              src="src/assets/images/MailTransparent.png"
+              src={MailTransparent}
               className="h-5 inline pr-2"
             />
             annotsav@gmail.com

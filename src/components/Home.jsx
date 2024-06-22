@@ -2,6 +2,13 @@ import Carousel from "./Carousel";
 import { useEffect } from "react";
 import appstore from "../assets/images/appstore.png"
 import playstore from "../assets/images/playstore.png"
+import RosterBar from "../assets/images/RosterBar.png"
+import RosterLaptop from "../assets/images/RosterLaptop.png"
+import RosterCloud from "../assets/images/RosterCloud.png"
+import RosterTree from "../assets/images/RosterTree.png"
+
+
+
 function Home() {
   useEffect (()=>{
     window.scrollTo(0, 0);
@@ -34,7 +41,7 @@ function Home() {
         src={appstore}
         className="h-16 inline ml-[3%]"
       />
-      <img src="src/assets/images/playstore.png" className="h-16 inline" />
+      <img src={playstore} className="h-16 inline" />
       <Carousel />
       <div className="py-[5%] mx-10">
         <h1 className="font-bold font-montserrat text-5xl text-center">
@@ -51,7 +58,7 @@ function Home() {
         <div className="grid grid-cols-4 gap-[4%] mt-4">
           <div className="border-[1px] border-black rounded p-3">
             <img
-              src="src/assets/images/RosterTree.png"
+              src={RosterTree}
               className="h-12 w-auto mx-auto block"
             />
             <p className="mt-[1.5] [font-size:auto]">
@@ -61,7 +68,7 @@ function Home() {
           </div>
           <div className="border-[1px] border-black rounded p-3">
             <img
-              src="src/assets/images/RosterBar.png"
+              src={RosterBar}
               className="h-12 w-auto mx-auto block"
             />
             <p className="mt-[1.5%] [font-size:auto]">
@@ -71,7 +78,7 @@ function Home() {
           </div>
           <div className="border-[1px] border-black rounded p-3">
             <img
-              src="src/assets/images/RosterLaptop.png"
+              src={RosterLaptop}
               className="h-12 w-auto mx-auto block"
             />
             <p className="mt-[1.5%] [font-size:auto]">
@@ -81,7 +88,7 @@ function Home() {
           </div>
           <div className="border-[1px] border-black rounded p-3">
             <img
-              src="src/assets/images/RosterCloud.png"
+              src={RosterCloud}
               className="h-12 w-auto mx-auto block"
             />
             <p className="mt-[1.5%] [font-size:auto]">

@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import {animate, calcLength, motion } from "framer-motion";
 import { useState } from "react";
+import logo from "../assets/images/logo.png"
 function Navigation() {
   let dur = .2;
   const btnVariant = {
@@ -44,7 +45,7 @@ function Navigation() {
         {" "}
         <nav className="bg-primaryColor-5 flex justify-between ">
           <img
-            src="/src/assets/images/logo.png"
+            src={logo}
             className=" h-14  pr-2"
           />
           <div className="pt-4 font-raleway text-2xl text-right text-white h-16 flex">
