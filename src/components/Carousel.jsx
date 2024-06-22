@@ -63,7 +63,7 @@ function Carousel() {
 
         {/* carousel buttons */}
         <div
-          className=" basis-14 my-8 flex flex-col justify-center gap-2"
+          className=" basis-14 my-8 flex flex-col justify-center gap-2 z-50"
           ref={btnContainerRef}>
           {carouselItems.map((item, index) => {
             const buttonClass =
@@ -81,7 +81,7 @@ function Carousel() {
                 <img
                   src={plant}
                   alt="img"
-                  className="object-cover object-center w-full h-full z-10"
+                  className="object-cover object-center w-full h-full "
                 />
               </motion.button>
             )
