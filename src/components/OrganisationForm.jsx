@@ -1,16 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
+import { motion } from "framer-motion"
+import { btnVariant, orgVariant } from "../constants/animations"
 
 function OrganisationForm() {
+  const [isVisible, setIsVisible] = useState(false)
+
   const handleToggleView = (event) => {
     event.preventDefault()
-    const element = document.querySelector("#org-size")
-    element.classList.toggle("hidden")
-    element.classList.toggle("flex")
-    console.log(event.target.textContent)
-    let arrow = event.target.textContent
+    setIsVisible(!isVisible)
     event.target.textContent = event.target.textContent === ">" ? "v" : ">"
-
   }
+
+  
+
   return (
     <>
       <div className="">
@@ -21,7 +23,7 @@ function OrganisationForm() {
             <p className="  text-secondaryColor-4">Organisation</p>
           </div>
           {/* form input area  */}
-          <form className="   ">
+          <form>
             <input
               type="text"
               id="name"
@@ -66,8 +68,11 @@ function OrganisationForm() {
               </span>
             </div>
 
-            <div
-              className="input p-2 mt-2  flex-col  !h-auto hidden"
+            <motion.div
+              variants={orgVariant}
+              initial="hidden"
+              animate={isVisible ? "visible" : "hidden"}
+              className="input p-2 mt-2 flex flex-col !h-auto"
               id="org-size">
               <span>
                 <input
@@ -91,7 +96,7 @@ function OrganisationForm() {
                 <input type="radio" name="hey" id="range4" className="mx-2" />
                 <label htmlFor="range4">100+</label>
               </span>
-            </div>
+            </motion.div>
             <textarea
               id="story"
               name="story"
@@ -99,9 +104,13 @@ function OrganisationForm() {
               cols="33"
               placeholder="MESSAGE"
               className="p-2 border-[.1em] rounded-sm border-black focus:outline-none w-full  resize-none mt-2"></textarea>
-            <button className="bg-primaryColor-5 text-yellow-50  rounded-full w-20 h-8 text-[16px] px-4 relative -right-[80%]   mt-2">
+            <motion.button className="bg-primaryColor-5 text-yellow-50  rounded-full w-20 h-8 text-[16px] px-4 relative -right-[80%]   mt-2"
+             variants={btnVariant}
+             whileHover={"hover"}
+             whileTap={"tap"}
+             onClick={(event )=>{event.preventDefault()}}>
               Submit
-            </button>
+            </motion.button>
           </form>
         </section>
       </div>

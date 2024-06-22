@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { carouselItems } from "../constants/carouselItems.js"
 import { motion } from "framer-motion"
 import plant from "../assets/images/plant.png"
+import { btnVariant } from "../constants/animations.js"
 function Carousel() {
   const handleClick = (event) => {
     const btnId = event.target.parentElement.id
@@ -70,7 +71,9 @@ function Carousel() {
                 ? "bg-primaryColor-5 rounded-full w-10 h-10 opacity-100"
                 : "bg-primaryColor-5 rounded-full w-10 h-10 opacity-75"
             return (
-              <button
+              <motion.button
+              variants={btnVariant}
+               whileHover={"hover"}
                 className={buttonClass}
                 id={item.id}
                 onClick={handleClick}
@@ -78,9 +81,9 @@ function Carousel() {
                 <img
                   src={plant}
                   alt="img"
-                  className="object-cover object-center w-full h-full"
+                  className="object-cover object-center w-full h-full z-10"
                 />
-              </button>
+              </motion.button>
             )
           })}
         </div>
