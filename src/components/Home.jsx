@@ -1,5 +1,7 @@
 import Carousel from "./Carousel";
 import { useEffect } from "react";
+import appstore from "../assets/images/appstore.png"
+import playstore from "../assets/images/playstore.png"
 function Home() {
   useEffect (()=>{
     window.scrollTo(0, 0);
@@ -27,8 +29,9 @@ function Home() {
           molestiae labore animi.
         </div>
       </div>
+      {/* /src/assets/images/bg-image.jpg */}
       <img
-        src="src/assets/images/appstore.png"
+        src={appstore}
         className="h-16 inline ml-[3%]"
       />
       <img src="src/assets/images/playstore.png" className="h-16 inline" />
