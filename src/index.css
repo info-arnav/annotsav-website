@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .input{
     @apply h-8 border-[.1em] rounded-sm border-black focus:outline-none
 }
