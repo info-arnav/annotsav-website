@@ -18,7 +18,7 @@
 2) Every collaborator must create a separate branch
 - `git branch checkout -b <dev-your_name>`. eg: git branch checkout -b dev-amaan
 3) Before coding a new feature, it is advised to pull the code from remote `dev` branch to prevent any type of conflict.
-- move to <dev-your_name> branch  : `git checkout <dev/your_name>`
+- move to <dev-your_name> branch  : `git checkout <dev-your_name>`
 - pull the remote branch : `git pull origin dev`
 4) Commit the changes 
 - `git add <changed_files>`
