@@ -51,17 +51,17 @@ function Home() {
         </h1>
         <br />
         <div>
-          <p className="font-bold font-montserrat text-center">
+          <p className="font-bold pt-3 font-montserrat text-center">
             Harnessing Millions Of Farm Level Data Points
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-[4%] mt-4">
+        <div className="grid grid-cols-4 gap-[4%] mt-4 pt-4">
           <div className="border-[1px] border-black rounded p-3">
             <img
               src={RosterTree}
               className="h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5] [font-size:auto]">
+            <p className="mt-[1.5] [font-size:auto ] text-center">
               Boost your cropn yield with our 150+ Agronomy models: multiple
               crops in varied geographies.
             </p>
@@ -71,7 +71,7 @@ function Home() {
               src={RosterBar}
               className="h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5%] [font-size:auto]">
+            <p className="mt-[1.5%] [font-size:auto] text-center">
               Informed crop decision with IoT device - real time crop data for
               accurate advisory.
             </p>
@@ -81,7 +81,7 @@ function Home() {
               src={RosterLaptop}
               className="h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5%] [font-size:auto]">
+            <p className="mt-[1.5%] [font-size:auto] text-center">
               Take farm management to the next level with comprehensive multi
               platform service.
             </p>
@@ -91,7 +91,7 @@ function Home() {
               src={RosterCloud}
               className="h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5%] [font-size:auto]">
+            <p className="mt-[1.5%] [font-size:auto] text-center">
               Unlock the power of remote weather data and artificial
               intelligence
             </p>
