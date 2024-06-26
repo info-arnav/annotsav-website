@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-
 import PlaystoreTransparent from "../assets/images/PlaystoreTransparent.png"
 import AppStoreTransparent from "../assets/images/AppStoreTransparent.png"
 import logo from "../assets/images/logo.png"
@@ -56,26 +55,26 @@ function Footer() {
         </div>
         <div className="inline-grid grid-cols-1 text-white pl-[13%] py-[4%] max-w-[28%]">
           <img src={logo} className="h-14" />
-          <div className="font-raleway font-thin pt-[15%] pb-[7%]">
+          <a className="font-raleway font-thin pt-[15%] pb-[7%]" href="https://shorturl.at/8ezHS" target="_blank">
             <img
               src={LocationMarkerTransparent}
               className="h-6 inline pr-2"
             />
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </div>
-          <div className="font-raleway font-thin pb-[7%]">
+            <span className="font-semibold">Netaji Subhas University of Technology</span>, Azad Hind Fauj Marg, Dwarka Sector-3, Dwarka, Delhi, 110078
+          </a>
+          <div className=" font-thin pb-[7%]">
             <img
               src={PhoneTransparent}
               className="h-6 inline pr-2"
             />
-            999999999
+           +91 85956 22774
           </div>
           <div className="font-raleway font-thin pb-[7%]">
             <img
               src={MailTransparent}
               className="h-5 inline pr-2"
             />
-            annotsav@gmail.com
+           enactus@nsut.ac.in
           </div>
         </div>
       </div>
