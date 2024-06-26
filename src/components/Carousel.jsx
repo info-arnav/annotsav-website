@@ -37,7 +37,7 @@ function Carousel() {
     <>
       <section className="w-full h-[18em] md:h-[24em] flex">
         <motion.section
-          className="relative basis-4/5  my-[2.5%] ml-[7.5%]"
+          className="relative basis-4/5 md:my-[2.5%] ml-[7.5%]"
           ref={carouselContainerRef}>
           {reversedArray.map(({ id, text1, text2, text3, image }) => (
             <div
@@ -48,11 +48,11 @@ function Carousel() {
                 <img
                   src={image}
                   alt="img"
-                  className="object-cover object-center w-full h-full"
+                  className="object-contain object-center w-full h-full"
                 />
               </div>
 
-              <div className="py-[6.25%]  basis-2/3 pr-[5%]">
+              <div className="py-[13%] md:py-[6.25%]  basis-2/3 pr-[5%]">
                 <p className="text-secondaryColor-4 font-semibold md:text-2xl text-base">{text1}</p>
                 <p className="font-semibold my-2 md:text-5xl text-xl">{text2}</p>
                 <p className="md:text-xl text-sm">{text3}</p>
