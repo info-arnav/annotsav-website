@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, useRef } from "react"
+import { useRef } from "react"
 import { carouselItems } from "../constants/carouselItems.js"
 import { motion } from "framer-motion"
 import plant from "../assets/images/plant.png"
@@ -35,27 +35,27 @@ function Carousel() {
 
   return (
     <>
-      <section className="w-full h-[24em] flex">
+      <section className="w-full h-[18em] md:h-[24em] flex">
         <motion.section
-          className="relative basis-4/5  my-8 ml-24"
+          className="relative basis-4/5 md:my-[2.5%] ml-[7.5%]"
           ref={carouselContainerRef}>
           {reversedArray.map(({ id, text1, text2, text3, image }) => (
             <div
               key={id}
-              className="absolute w-full h-full flex gap-10  bg-white"
+              className="absolute w-full h-full flex gap-[5%] bg-white"
               id={id}>
               <div className=" basis-2/5">
                 <img
                   src={image}
                   alt="img"
-                  className="object-cover object-center w-full h-full"
+                  className="object-contain object-center w-full h-full"
                 />
               </div>
 
-              <div className="  py-16  basis-2/3 pr-8">
-                <p className="text-secondaryColor-4 text-2xl font-semibold">{text1}</p>
-                <p className="font-semibold text-5xl my-2">{text2}</p>
-                <p className="text-xl">{text3}</p>
+              <div className="py-[13%] md:py-[6.25%]  basis-2/3 pr-[5%]">
+                <p className="text-secondaryColor-4 font-semibold md:text-2xl text-base">{text1}</p>
+                <p className="font-semibold my-2 md:text-5xl text-xl">{text2}</p>
+                <p className="md:text-xl text-sm">{text3}</p>
               </div>
             </div>
           ))}
@@ -68,8 +68,8 @@ function Carousel() {
           {carouselItems.map((item, index) => {
             const buttonClass =
               index === 0
-                ? "bg-primaryColor-5 rounded-full w-10 h-10 opacity-100"
-                : "bg-primaryColor-5 rounded-full w-10 h-10 opacity-75"
+                ? "bg-primaryColor-5 rounded-full opacity-100 w-7 h-7 md:w-10 md:h-10"
+                : "bg-primaryColor-5 rounded-full opacity-75 w-7 h-7 md:w-10 md:h-10"
             return (
               <motion.button
               variants={btnVariant}

@@ -1,4 +1,3 @@
-import React from "react"
 import { motion } from "framer-motion"
 import { btnVariant } from "../constants/animations"
 function ContactForm() {
