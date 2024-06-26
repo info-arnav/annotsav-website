@@ -1,18 +1,17 @@
-import Carousel from "./Carousel";
-import { useEffect } from "react";
+import Carousel from "./Carousel"
+import { useEffect } from "react"
 import appstore from "../assets/images/appstore.png"
 import playstore from "../assets/images/playstore.png"
 import RosterBar from "../assets/images/RosterBar.png"
 import RosterLaptop from "../assets/images/RosterLaptop.png"
 import RosterCloud from "../assets/images/RosterCloud.png"
 import RosterTree from "../assets/images/RosterTree.png"
-
-
+import plant2 from "../assets/images/plant2.png"
 
 function Home() {
-  useEffect (()=>{
-    window.scrollTo(0, 0);
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <div className="bg-[url('/src/assets/images/bg-image.jpg')] bg-center bg-no-repeat bg-cover relative h-[50%] px-[2%] py-[20%]">
@@ -24,24 +23,26 @@ function Home() {
           nourish the soil
         </div>
       </div>
-      <div className="pt-[10%] pb-[3%] px-[5%]">
-        <h1 className="font-semibold font-montserrat text-5xl">
-          The Story of <br />
-          Annotsav
-        </h1>
-        <div className="max-w-[34%] mt-[5%]">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
-          delectus at. Expedita omnis laudantium consectetur. Assumenda alias
-          autem, rem quidem eos cupiditate doloremque esse ullam minus vel
-          molestiae labore animi.
+      <div className="flex justify-start gap-20 text-xl pt-16 pb-4 px-24">
+        <img src={plant2} alt={plant2} width="350px" />
+        <div className="w-[23em]">
+          <p className="text-5xl font-semibold mb-3">
+            The story of <br /> <span className="font-bold text-primaryColor-1 text-7xl">Annotsav</span>  
+          </p>
+          <p>Our Journey began with a simple question:</p>
+          <p className="my-4 text-primaryColor-4 font-semibold">How can we make farming and gardening more sustainable?</p>
+          <p className="">
+            Annotsav was created to empower farmers and gardeners with smart
+            irrigation solutions, conserving water and improving crop yields
+            from the ground up.
+          </p>
         </div>
       </div>
-      {/* /src/assets/images/bg-image.jpg */}
-      <img
+      {/* <img
         src={appstore}
         className="h-16 inline ml-[3%]"
       />
-      <img src={playstore} className="h-16 inline" />
+      <img src={playstore} className="h-16 inline" /> */}
       <Carousel />
       <div className="py-[5%] mx-10">
         <h1 className="font-bold font-montserrat text-center md:text-5xl text-2xl">
@@ -67,10 +68,7 @@ function Home() {
             </p>
           </div>
           <div className="border-[1px] border-black rounded p-3">
-            <img
-              src={RosterBar}
-              className="h-9 md:h-12 w-auto mx-auto block"
-            />
+            <img src={RosterBar} className="h-9 md:h-12 w-auto mx-auto block" />
             <p className="md:mt-[1.5%] text-sm md:text-base text-center">
               Informed crop decision with IoT device - real time crop data for
               accurate advisory.
@@ -99,7 +97,7 @@ function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

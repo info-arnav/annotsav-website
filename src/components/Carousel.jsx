@@ -53,7 +53,7 @@ function Carousel() {
               </div>
 
               <div className="py-[13%] md:py-[6.25%]  basis-2/3 pr-[5%]">
-                <p className="text-secondaryColor-4 font-semibold md:text-2xl text-base">{text1}</p>
+                <p className="text-primaryColor-4 font-semibold md:text-4xl text-base">{text1}</p>
                 <p className="font-semibold my-2 md:text-5xl text-xl">{text2}</p>
                 <p className="md:text-xl text-sm">{text3}</p>
               </div>

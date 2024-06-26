@@ -42,7 +42,7 @@ function Navigation() {
                 <NavLink to={"/organisation"}>
                   <motion.button
                     type="button"
-                    className=" relation p-1 text-[18px] bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full  capitalize"
+                    className=" relation p-1 mt-2 text-[18px] bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full  capitalize"
                     initial="initial"
                     animate={animate ? "btn2" : "initial"}
                     variants={btnVariant}

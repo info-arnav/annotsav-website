@@ -7,16 +7,13 @@ import PhoneTransparent from "../assets/images/PhoneTransparent.png"
 import MailTransparent from "../assets/images/MailTransparent.png"
 
 
-
-
-
 function Footer() {
   return (
-    <div>
+    <section className="-mt-20">
       <h1 className="font-montserrat font-bold text-8xl text-center mt-[10%] pb-[10%]">
         LET'S CELEBRATE
         <br />
-        <div className="text-[#FD9B63]">ANN-OTSAV</div>
+        <div className="text-primaryColor-1">ANN-OTSAV</div>
       </h1>
       <div className="flex bg-primaryColor-5 pb-[5%]">
         <div className="inline-grid grid-cols-2 text-white pl-[13%] py-[5%]">
@@ -78,7 +75,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
