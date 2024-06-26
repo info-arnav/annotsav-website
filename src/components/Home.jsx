@@ -16,7 +16,7 @@ function Home() {
   return (
     <div>
       <div className="bg-[url('/src/assets/images/bg-image.jpg')] bg-center bg-no-repeat bg-cover relative h-[50%] px-[2%] py-[20%]">
-        <div className="font-montserrat relative font-bold text-8xl text-white top-[50%] translate-[(-50%,-50%)]">
+        <div className="font-montserrat relative font-bold text-4xl md:text-8xl text-white top-[50%] translate-[(-50%,-50%)]">
           Let
           <br />
           technology
@@ -44,24 +44,24 @@ function Home() {
       <img src={playstore} className="h-16 inline" />
       <Carousel />
       <div className="py-[5%] mx-10">
-        <h1 className="font-bold font-montserrat text-5xl text-center">
+        <h1 className="font-bold font-montserrat text-center md:text-5xl text-2xl">
           Transforming Indian Agricultural
           <br />
           Landscape
         </h1>
         <br />
         <div>
-          <p className="font-bold pt-3 font-montserrat text-center">
+          <p className="font-bold font-montserrat text-center md:pt-3">
             Harnessing Millions Of Farm Level Data Points
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-[4%] mt-4 pt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-[4%] mt-4 pt-4">
           <div className="border-[1px] border-black rounded p-3">
             <img
               src={RosterTree}
-              className="h-12 w-auto mx-auto block"
+              className="h-9 md:h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5] [font-size:auto ] text-center">
+            <p className="md:mt-[1.5] text-sm md:text-base text-center">
               Boost your cropn yield with our 150+ Agronomy models: multiple
               crops in varied geographies.
             </p>
@@ -69,9 +69,9 @@ function Home() {
           <div className="border-[1px] border-black rounded p-3">
             <img
               src={RosterBar}
-              className="h-12 w-auto mx-auto block"
+              className="h-9 md:h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5%] [font-size:auto] text-center">
+            <p className="md:mt-[1.5%] text-sm md:text-base text-center">
               Informed crop decision with IoT device - real time crop data for
               accurate advisory.
             </p>
@@ -79,9 +79,9 @@ function Home() {
           <div className="border-[1px] border-black rounded p-3">
             <img
               src={RosterLaptop}
-              className="h-12 w-auto mx-auto block"
+              className="h-9 md:h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5%] [font-size:auto] text-center">
+            <p className="md:mt-[1.5%] text-sm md:text-base text-center">
               Take farm management to the next level with comprehensive multi
               platform service.
             </p>
@@ -89,9 +89,9 @@ function Home() {
           <div className="border-[1px] border-black rounded p-3">
             <img
               src={RosterCloud}
-              className="h-12 w-auto mx-auto block"
+              className="h-9 md:h-12 w-auto mx-auto block"
             />
-            <p className="mt-[1.5%] [font-size:auto] text-center">
+            <p className="md:mt-[1.5%] text-sm md:text-base text-center">
               Unlock the power of remote weather data and artificial
               intelligence
             </p>
