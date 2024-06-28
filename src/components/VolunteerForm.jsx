@@ -6,13 +6,13 @@ function VolunteerForm() {
   return (
     <>
       <div className="">
-        <section className="flex justify-between  m-24">
+        <section className="flex flex-col lg:flex-row lg:justify-between space-y-10 lg:space-y-0 m-24">
           {/* tag line part */}
           <div className="text-6xl  font-bold">
             <p>Share your 💡</p> <p>idea on how</p>
             <p>we can grow</p>
-            <p className=" text-secondaryColor-4">Annotsav </p>
-            <p className="text-secondaryColor-4">Moment</p>
+            <p className=" text-secondaryColor-4">Annotsav</p>
+            <p className="text-secondaryColor-4">Movement</p>
           </div>
           {/* form input area  */}
           <form className="   ">
@@ -38,7 +38,7 @@ function VolunteerForm() {
               />
             </p>
 
-            
+
             <textarea
               id="story"
               name="story"
@@ -47,10 +47,10 @@ function VolunteerForm() {
               placeholder="Tell us what you want to do for the moment"
               className="p-2 border-[.1em] rounded-sm border-black focus:outline-none w-full  resize-none mt-2"></textarea>
             <motion.button className="bg-primaryColor-5 text-yellow-50  rounded-full w-20 h-8 text-[16px] px-4 relative -right-[80%]   mt-2"
-             variants={btnVariant}
-             whileHover={"hover"}
-             whileTap={"tap"}
-             onClick={(event )=>{event.preventDefault()}}>
+              variants={btnVariant}
+              whileHover={"hover"}
+              whileTap={"tap"}
+              onClick={(event) => { event.preventDefault() }}>
               Submit
             </motion.button>
           </form>
