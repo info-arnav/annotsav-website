@@ -16,14 +16,14 @@ function OrganisationForm() {
   return (
     <>
       <div className="">
-        <section className="flex justify-between flex-col lg:flex-row space-y-10 lg:space-y-0 m-24">
+        <section className="flex items-center lg:justify-between flex-col lg:flex-row space-y-10 lg:space-y-0 m-24">
           {/* tag line part */}
           <div className="text-6xl font-bold">
             <p>Get Annotsav</p> <p>for your</p>{" "}
             <p className="  text-secondaryColor-4">Organisation</p>
           </div>
           {/* form input area  */}
-          <form className="flex flex-col items-center lg:items-stretch w-max">
+          <form className="">
             <input
               type="text"
               id="name"
@@ -104,7 +104,7 @@ function OrganisationForm() {
               cols="33"
               placeholder="MESSAGE"
               className="p-2 border-[.1em] rounded-sm border-black focus:outline-none w-full  resize-none mt-2"></textarea>
-            <motion.button className="bg-primaryColor-5 text-yellow-50  rounded-full w-20 h-8 text-[16px] px-4 relative right-0 lg:-right-[80%]   mt-2"
+            <motion.button className="bg-primaryColor-5 text-yellow-50  rounded-full w-20 h-8 text-[16px] px-4 relative -right-[80%]   mt-2"
               variants={btnVariant}
               whileHover={"hover"}
               whileTap={"tap"}
