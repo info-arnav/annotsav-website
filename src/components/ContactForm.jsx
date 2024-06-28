@@ -4,15 +4,14 @@ function ContactForm() {
   return (
     <>
       <div className="">
-        <section className="flex justify-between  m-24">
+        <section className="flex flex-col lg:flex-row items-center lg:justify-between m-24">
           {/* tag line part */}
           <div className="text-6xl  font-bold  p-20">
             <p>Join the</p>
-
-            <p className="text-secondaryColor-4 text-7xl">Moment 🪴</p>
+            <p className="text-secondaryColor-4 text-7xl">Movement 🪴</p>
           </div>
           {/* form input area  */}
-          <form className="  w-2/5   ">
+          <form className="lg:w-2/5">
             <input
               type="text"
               id="name"
