@@ -16,11 +16,11 @@ function OrganisationForm() {
   return (
     <>
       <div className="">
-        <section className="flex items-center lg:justify-between flex-col lg:flex-row space-y-10 lg:space-y-0 m-24">
+        <section className="flex items-center lg:justify-around flex-col lg:flex-row space-y-10 lg:space-y-0 m-24">
           {/* tag line part */}
-          <div className="text-3xl lg:text-6xl font-bold">
+          <div className="text-5xl lg:text-6xl font-bold w-full lg:w-max text-left pl-2 lg:pl-0">
             <p>Get Annotsav</p> <p>for your</p>{" "}
-            <p className="  text-secondaryColor-4">Organisation</p>
+            <p className="text-secondaryColor-4">Organisation</p>
           </div>
           {/* form input area  */}
           <form className="flex flex-col items-center lg:items-stretch">
@@ -41,13 +41,13 @@ function OrganisationForm() {
               <input
                 type="email"
                 id="email"
-                placeholder="email"
+                placeholder="E-mail"
                 className="input p-2"
               />
               <input
                 type="text"
                 id="number"
-                placeholder="number"
+                placeholder="Number"
                 className="input p-2"
               />
               <input
@@ -104,7 +104,8 @@ function OrganisationForm() {
               cols="33"
               placeholder="MESSAGE"
               className="p-2 border-[.1em] rounded-sm border-black focus:outline-none w-full  resize-none mt-2"></textarea>
-            <motion.button className="bg-primaryColor-5 text-yellow-50  rounded-full w-20 h-8 text-[16px] px-4 relative right-0 lg:-right-[80%]   mt-2"
+
+            <motion.button className="bg-primaryColor-5 text-yellow-50  rounded-md lg:rounded-full w-40 lg:w-20 h-8 text-[16px] px-4 relative right-0 lg:-right-[80%] mt-4"
               variants={btnVariant}
               whileHover={"hover"}
               whileTap={"tap"}
