@@ -12,6 +12,10 @@ export const links = [
          'to': '/organisation',
     },
     {
+        'link': 'volunteer',
+         'to': '/volunteer',
+    },
+    {
         'link': 'Reach us',
          'to': '/contact',
     },

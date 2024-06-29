@@ -106,9 +106,9 @@ function Navigation() {
                           animate={isOpen ? "visible" : "hidden"}
                           custom={index}
                           whileTap='tap'
-                          // onClick={() => {
-                          //   setIsOpen(!isOpen)
-                          // }}
+                          onClick={() => {
+                            setIsOpen(!isOpen)
+                          }}
                           >
                           {item.link}
                         </motion.p>
