@@ -121,17 +121,17 @@ function Navigation() {
           ) : (
             //  *************** NAV FOR LARGE SCREEN DEVICES **********************
             <>
-              <div className="pt-4 font-raleway text-2xl  text-white h-16 flex">
-                <NavLink to="/" className="pr-16">
+              <div className="pt-4 font-raleway text-2xl  text-white h-16 flex  ">
+                <NavLink to="/" className="pr-16 hover:font-semibold  w-40 h-14">
                   Home
                 </NavLink>
                 <a
                   href="https://forms.gle/8FKZzg2Wi2n76Gvk6"
                   target="_blank"
-                  className="pr-16">
+                  className="pr-16 hover:font-semibold  w-40 h-14">
                   Survey
                 </a>
-                <NavLink to="/contact" className="pr-8">
+                <NavLink to="/contact" className="pr-8 hover:font-semibold  w-40 h-14">
                   Contact Us
                 </NavLink>
 
@@ -151,7 +151,7 @@ function Navigation() {
                     <NavLink to={"/organisation"}>
                       <motion.button
                         type="button"
-                        className=" relation p-1 mt-2 text-[18px] bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full  capitalize"
+                        className=" relation p-1 mt-2 text-[18px] bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full  capitalize "
                         initial="initial"
                         animate={animate ? "btn2" : "initial"}
                         variants={btnVariant}
@@ -164,7 +164,7 @@ function Navigation() {
                     <NavLink to="/volunteer">
                       <motion.button
                         type="button"
-                        className=" p-2 my-6 bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full capitalize"
+                        className=" p-2 my-6 bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full capitalize "
                         initial="initial"
                         animate={animate ? "btn3" : "initial"}
                         variants={btnVariant}
