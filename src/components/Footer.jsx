@@ -28,13 +28,13 @@ function Footer() {
       {screenWidth > 600 ? (
         // *********** FOOTER FOR LARGE SCREEN SIZE *********
         <>
-          <section className="">
+          <section>
             <h1 className="font-montserrat font-bold text-8xl text-center mt-[10%] pb-[10%]">
               LET'S CELEBRATE
               <br />
               <div className="text-primaryColor-1">ANN-OTSAV</div>
             </h1>
-            <div className="flex bg-primaryColor-5 pb-[5%] ">
+            <div className="flex bg-primaryColor-5  ">
               <img src={logo} className="h-14 w-100" />
               <div className="inline-grid grid-cols-2 text-white pl-[13%] py-[5%]">
                 <div className="col-span-2 font-montserrat font-bold pb-[20%]">
@@ -115,9 +115,7 @@ function Footer() {
       ) : (
         // ************* FOOTER FOR SMALL SCREEN SIZE ***********
         <>
-          <section className="-mt-20 ">
-            <hr className="w-[1300px] relative left-[200px] top-[950px] max-sm:w-[23rem] max-sm:top-[490px] max-sm:left-[70px]"></hr>
-            <p className="text-xs text-white font-thin text-center relative top-[955px] max-sm:top-[500px] max-sm:text-[10px]">{`© ${date.getFullYear()} copyright. All rights reserved.`}</p>
+          <section className="-mt-10  ">
             <br></br>
             <h1 className="font-montserrat font-bold text-8xl text-center mt-[10%] pb-[10%] max-sm:text-5xl">
               LET'S CELEBRATE
@@ -155,7 +153,7 @@ function Footer() {
                     src={LocationMarkerTransparent}
                     className="h-6 inline pr-2 "
                   />
-                  <span className="font-semibold opacity-60 hover:opacity-100 inline max-sm:text-[13px] ">
+                  <span className="font-semibold   inline max-sm:text-[13px] ">
                     Netaji Subhas University of Technology
                   </span>
                   ,
@@ -176,12 +174,13 @@ function Footer() {
                     src={MailTransparent}
                     className="h-5 inline pr-2 max-sm:h-4"
                   />
-                  <p className="inline max-sm:text-[14px]">
+                  <p className="inline font-semibold max-sm:text-[14px]">
                     enactus@nsut.ac.in
                   </p>
                 </div>
               </div>
             </div>
+            <p className="text-xs bg-primaryColor-5 font-thin text-center pb-4">{`© ${date.getFullYear()} copyright. All rights reserved.`}</p>
           </section>
         </>
       )}
