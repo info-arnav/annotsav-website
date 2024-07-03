@@ -11,6 +11,6 @@
     display: none;
 }
 
-html{
+:root{
     overflow-x: hidden;
 }
