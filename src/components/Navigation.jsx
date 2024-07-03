@@ -26,7 +26,7 @@ function Navigation() {
 
   return (
     <>
-      <section className="relative  ">
+      <section className="fixed right-0 left-0 top-0 z-50 ">
         <nav className="bg-primaryColor-5 flex justify-between pr-4 w-full">
           <img src={logo} className=" h-14  pr-2" />
 

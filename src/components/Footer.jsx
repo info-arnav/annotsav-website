@@ -116,13 +116,12 @@ function Footer() {
         // ************* FOOTER FOR SMALL SCREEN SIZE ***********
         <>
           <section className="-mt-10  ">
-            <br></br>
             <h1 className="font-montserrat font-bold text-8xl text-center mt-[10%] pb-[10%] max-sm:text-5xl">
               LET'S CELEBRATE
               <br />
               <div className="text-primaryColor-1">ANN-OTSAV</div>
             </h1>
-            <div className="flex bg-primaryColor-5 pb-[5%] ">
+            <div className="flex bg-primaryColor-5 pb-[5%]  ">
               <img
                 src={logo}
                 className="h-14 w-100 relative top-[75px] left-[200px] max-sm:left-[50px] max-sm:top-[20px]"
