@@ -30,7 +30,7 @@ function Navigation() {
         <nav className="bg-primaryColor-5 flex justify-between pr-4 w-full">
           <img src={logo} className=" h-14  pr-2" />
 
-          {screenWidth < 600 ? (
+          {screenWidth < 700 ? (
             /* *************** NAV FOR SMALL SCREEN DEVICES ********************** */
             <>
               {/* hamburger menu */}
@@ -65,7 +65,7 @@ function Navigation() {
               </motion.div>
 
               <motion.div
-                className="absolute bg-primaryColor-2 w-[50%] top-0 z-40 right-0 flex flex-col text-3xl capitalize  pt-4"
+                className="absolute bg-primaryColor-2 w-[50%]  z-40 right-0 flex flex-col text-3xl capitalize  pt-4 "
                 variants={menuVariant}
                 initial="close"
                 animate={isOpen ? "open" : "close"}
@@ -74,6 +74,7 @@ function Navigation() {
                 }}>
                 {/* for styling */}
                 <p className=" basis-[35px]  "></p>
+
                 {links.map((item, index) => {
                   if (item.link == "survey") {
                     return (
@@ -82,7 +83,9 @@ function Navigation() {
                         target="_blank"
                         key={index}>
                         <motion.p
-                          className="p-2 "
+                          className="p-2 bg-gradient-to-r from-primaryColor-1 to-primaryColor-2 
+                          border-[1px]
+                          border-primaryColor-1"
                           variants={menuItemVariant}
                           whileHover="hover"
                           initial="hidden"
@@ -99,7 +102,7 @@ function Navigation() {
                     return (
                       <NavLink to={`${item.to}`} key={index}>
                         <motion.p
-                          className="p-2 "
+                          className="p-2 bg-gradient-to-r from-primaryColor-1 to-primaryColor-2 border-[2px] border-primaryColor-1"
                           variants={menuItemVariant}
                           whileHover="hover"
                           initial="hidden"

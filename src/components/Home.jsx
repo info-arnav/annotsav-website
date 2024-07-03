@@ -23,15 +23,23 @@ function Home() {
           nourish the soil
         </div>
       </div>
-      <div className="flex justify-start gap-20 text-xl pt-16 pb-4 px-24">
-        <img src={plant2} alt={plant2} width="350px" />
-        <div className="w-[23em]">
-          <p className="text-5xl font-semibold mb-3">
-            The story of <br /> <span className="font-bold text-primaryColor-1 text-7xl">Annotsav</span>  
+
+
+
+      <div className="flex flex-col lg:flex-row  justify-start md:gap-20 text-xl pt-10  pb-5 md:px-24 mx-10 ">
+        <img src={plant2} alt={plant2} width="350px" className="ml-10" />
+        <div className="w-[23em] ">
+          <p className="text-5xl font-semibold mb-3 text-center  sm:text-start">
+            The story of <br />{" "}
+            <span className="font-bold text-primaryColor-1 md:text-7xl">
+              Annotsav
+            </span>
           </p>
           <p>Our Journey began with a simple question:</p>
-          <p className="my-4 text-primaryColor-4 font-semibold">How can we make farming and gardening more sustainable?</p>
-          <p className="">
+          <p className="my-4 text-primaryColor-4 font-semibold">
+            How can we make farming and gardening more sustainable?
+          </p>
+          <p>
             Annotsav was created to empower farmers and gardeners with smart
             irrigation solutions, conserving water and improving crop yields
             from the ground up.
