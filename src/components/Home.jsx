@@ -26,8 +26,8 @@ function Home() {
 
 
 
-      <div className="flex flex-col lg:flex-row  justify-start md:gap-20 text-xl pt-10  pb-5 md:px-24 mx-10 ">
-        <img src={plant2} alt={plant2} width="350px" className="ml-10" />
+      <div className="flex flex-col lg:flex-row  justify-start md:gap-20 text-sm pt-10  px-auto md:px-24  pl-10 lg:text-xl">
+        <img src={plant2} alt={plant2} width="350px" className="ml-10 " />
         <div className="w-[23em] ">
           <p className="text-5xl font-semibold mb-3 text-center  sm:text-start">
             The story of <br />{" "}
@@ -36,7 +36,7 @@ function Home() {
             </span>
           </p>
           <p>Our Journey began with a simple question:</p>
-          <p className="my-4 text-primaryColor-4 font-semibold">
+          <p className="my-4 text-primaryColor-4 font-semibold ">
             How can we make farming and gardening more sustainable?
           </p>
           <p>

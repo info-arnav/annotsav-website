@@ -18,7 +18,9 @@ export default {
         raleway: ["Raleway, sans-serif"],
         montserrat: ["Montserrat, sans-serif"],
       },
-     
+      padding: {
+        'auto': 'auto',
+      },
     },
   },
   plugins: [],
