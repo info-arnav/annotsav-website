@@ -4,7 +4,7 @@ function ContactForm() {
   return (
     <>
       <div className="">
-        <section className="flex flex-col lg:flex-row items-center lg:justify-between m-24">
+        <section className="flex flex-col lg:flex-row items-center lg:justify-between m-10 lg:mt-20">
           {/* tag line part */}
           <div className="text-5xl lg:text-6xl font-bold p-20">
             <p>Join the</p>

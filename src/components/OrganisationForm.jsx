@@ -16,7 +16,7 @@ function OrganisationForm() {
   return (
     <>
       <div className="">
-        <section className="flex items-center lg:justify-around flex-col lg:flex-row space-y-10 lg:space-y-0 m-24">
+        <section className="flex items-center lg:justify-around flex-col lg:flex-row space-y-10 lg:space-y-0 mx-10 mt-8">
           {/* tag line part */}
           <div className="text-5xl lg:text-6xl font-bold w-full lg:w-max text-left pl-2 lg:pl-0">
             <p>Get Annotsav</p> <p>for your</p>{" "}

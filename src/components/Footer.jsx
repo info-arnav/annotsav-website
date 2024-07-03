@@ -115,7 +115,7 @@ function Footer() {
       ) : (
         // ************* FOOTER FOR SMALL SCREEN SIZE ***********
         <>
-          <section className="-mt-10  ">
+          <section className="-mt-10 pt-5 ">
             <h1 className="font-montserrat font-bold text-8xl text-center mt-[10%] pb-[10%] max-sm:text-5xl">
               LET'S CELEBRATE
               <br />

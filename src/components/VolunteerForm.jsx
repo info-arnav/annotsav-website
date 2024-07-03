@@ -6,7 +6,7 @@ function VolunteerForm() {
   return (
     <>
       <div className="">
-        <section className="flex flex-col lg:flex-row lg:justify-between space-y-10 lg:space-y-0 m-24">
+        <section className="flex flex-col lg:flex-row lg:justify-around space-y-10 lg:space-y-0 m-10 lg:mt-20">
           {/* tag line part */}
           <div className="text-5xl lg:text-6xl font-bold">
             <p>Share your 💡</p> <p>idea on how</p>
