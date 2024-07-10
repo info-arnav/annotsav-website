@@ -15,14 +15,14 @@ export const btnVariant = {
   },
 
   btn2: {
-    rotate: 10,
+    // rotate: 10,
     opacity: 1,
     transition: {
       delay: dur,
     },
   },
   btn3: {
-    rotate: -18,
+    // rotate: -18,
     opacity: 1,
     transition: {
       delay: dur + 0.1,

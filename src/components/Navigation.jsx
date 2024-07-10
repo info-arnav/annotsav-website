@@ -191,7 +191,7 @@ function Navigation() {
                     <NavLink to="/volunteer">
                       <motion.button
                         type="button"
-                        className=" p-2 my-6 bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full capitalize "
+                        className=" p-2 my-2 bg-primaryColor-3 w-36 h-12 border-[#713906] border-2 rounded-full capitalize "
                         initial="initial"
                         animate={animate ? "btn3" : "initial"}
                         variants={btnVariant}
