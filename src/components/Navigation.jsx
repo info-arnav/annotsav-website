@@ -11,45 +11,40 @@ function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   const location = useLocation();
-  useEffect(()=>{
-    const nav = document.querySelector("#navigation");
-    console.log(location.pathname , 'location event');
-    if(location.pathname == 'organisation'){
-      nav.classList.add("bg-primaryColor-5");
-    }
-    if(location.pathname == '/'){
-      nav.classList.remove("bg-primaryColor-5");
-    }
-    else{
-      nav.classList.add("bg-primaryColor-5");
-    }
-  },[location])
-
   useEffect(() => {
-    function updateScreenWidth() {
-      setScreenWidth(window.innerWidth)
-    }
-    function updateNavColor (){
+    const navigation = document.querySelector("#navigation");
 
-      const navigation = document.querySelector("#navigation");
-      if(window.scrollY > 700 && location.pathname == '/'){
-        navigation.classList.add('bg-primaryColor-5')
+    const updateNavColor = () => {
+      if (!navigation) return;
+      
+      if (location.pathname === '/') {
+        if (window.scrollY > 700) {
+          navigation.classList.add('bg-primaryColor-5');
+        } else {
+          navigation.classList.remove('bg-primaryColor-5');
+        }
+      } else {
+        navigation.classList.add('bg-primaryColor-5');
       }
-      else {
-        navigation.classList.remove('bg-primaryColor-5')
-      }
-     
-    }
+    };
 
-    window.addEventListener("resize", updateScreenWidth)
-    document.addEventListener("scroll", updateNavColor)
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
 
-    // Cleanup function to remove the event listener
+    window.addEventListener("resize", updateScreenWidth);
+    window.addEventListener("scroll", updateNavColor);
+
+    // Initial call to set the correct nav color based on the current path and scroll position
+    updateNavColor();
+
+    // Cleanup function to remove the event listeners
     return () => {
-      window.removeEventListener("resize", updateScreenWidth)
-      window.removeEventListener("scroll", updateNavColor)
-    }
-  }, [])
+      window.removeEventListener("resize", updateScreenWidth);
+      window.removeEventListener("scroll", updateNavColor);
+    };
+  }, [location]);
+  
 
   return (
     <>
