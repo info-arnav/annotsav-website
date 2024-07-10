@@ -14,6 +14,9 @@ function Navigation() {
   useEffect(()=>{
     const nav = document.querySelector("#navigation");
     console.log(location.pathname , 'location event');
+    if(location.pathname == 'organisation'){
+      nav.classList.add("bg-primaryColor-5");
+    }
     if(location.pathname == '/'){
       nav.classList.remove("bg-primaryColor-5");
     }
