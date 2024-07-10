@@ -165,7 +165,7 @@ function Navigation() {
                   onClick={() => {
                     setAnimate(!animate)
                   }}>
-                  <p className=" ">
+                  <p >
                     <motion.button
                       type="button"
                       className="p-2 bg-primaryColor-4 text-white w-36 border-[#713906] border-2 rounded-full h-12 capitalize hover:shadow-lg hover:shadow-primaryColor-3">

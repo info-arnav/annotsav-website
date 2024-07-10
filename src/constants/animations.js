@@ -2,8 +2,7 @@
 let dur = 0.2
 export const btnVariant = {
   initial: {
-    rotate: 0, opacity: 0,
-   
+     display: 'none',
   },
   hover: {
     scale: 1.2,
@@ -15,15 +14,13 @@ export const btnVariant = {
   },
 
   btn2: {
-    // rotate: 10,
-    opacity: 1,
+    display: 'block',
     transition: {
       delay: dur,
     },
   },
   btn3: {
-    // rotate: -18,
-    opacity: 1,
+    display: 'block',
     transition: {
       delay: dur + 0.1,
     },
