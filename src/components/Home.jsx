@@ -9,9 +9,9 @@ import RosterTree from "../assets/images/RosterTree.png"
 import plant2 from "../assets/images/plant2.png"
 
 function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
   return (
     <div>
       <div className="bg-[url('/src/assets/images/bg-image.jpg')] bg-center bg-no-repeat bg-cover relative h-[50%] px-[2%] py-[20%]">
@@ -23,8 +23,6 @@ function Home() {
           nourish the soil
         </div>
       </div>
-
-
 
       <div className="flex flex-col lg:flex-row  justify-start md:gap-20 text-sm pt-10  px-auto md:px-24  pl-10 lg:text-xl">
         <img src={plant2} alt={plant2} width="350px" className="" />
@@ -46,11 +44,12 @@ function Home() {
           </p>
         </div>
       </div>
-      {/* <img
-        src={appstore}
-        className="h-16 inline ml-[3%]"
-      />
-      <img src={playstore} className="h-16 inline" /> */}
+     
+      <div className=" text-center pt-6 cursor-pointer">
+        <img src={appstore} className="h-16 inline ml-[3%]" />
+        <img src={playstore} className="h-16 inline" />
+      </div>
+
       <Carousel />
       <div className="py-[5%] mx-10">
         <h1 className="font-bold font-montserrat text-center md:text-5xl text-2xl">

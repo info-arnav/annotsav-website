@@ -26,8 +26,8 @@ function Navigation() {
 
   return (
     <>
-      <section className="  ">
-        <nav className="bg-primaryColor-5 flex justify-between pr-4 w-full ">
+      <section className=" fixed right-0 z-50 left-0 top-0  ">
+        <nav className="bg-primaryColor-5 flex justify-between pr-4 w-full shadow-md shadow-green-600 ">
           <img src={logo} className=" h-14  pr-2" />
 
           {screenWidth < 700 ? (
@@ -146,7 +146,7 @@ function Navigation() {
                   <p className=" ">
                     <motion.button
                       type="button"
-                      className="p-2 bg-primaryColor-4 text-white w-36 border-[#713906] border-2 rounded-full h-12 capitalize">
+                      className="p-2 bg-primaryColor-4 text-white w-36 border-[#713906] border-2 rounded-full h-12 capitalize hover:shadow-lg hover:shadow-primaryColor-3">
                       Join Us
                     </motion.button>
                   </p>
