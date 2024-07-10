@@ -22,6 +22,10 @@ function Home() {
           <br />
           nourish the soil
         </div>
+        <div className=" absolute bottom-0 left-0 cursor-pointer pb-9 flex ">
+        <img src={appstore} className="h-16  ml-[3%]" />
+        <img src={playstore} className="h-16 " />
+      </div>
       </div>
 
       <div className="flex flex-col lg:flex-row  justify-start md:gap-20 text-sm pt-10  px-auto md:px-24  pl-10 lg:text-xl">
@@ -29,7 +33,7 @@ function Home() {
         <div className="w-[23em] ">
           <p className="text-5xl font-semibold mb-3 text-center  sm:text-start">
             The story of <br />{" "}
-            <span className="font-bold text-primaryColor-1 md:text-7xl">
+            <span className="font-bold  md:text-7xl">
               Annotsav
             </span>
           </p>
@@ -45,10 +49,7 @@ function Home() {
         </div>
       </div>
      
-      <div className=" text-center pt-6 cursor-pointer">
-        <img src={appstore} className="h-16 inline ml-[3%]" />
-        <img src={playstore} className="h-16 inline" />
-      </div>
+     
 
       <Carousel />
       <div className="py-[5%] mx-10">

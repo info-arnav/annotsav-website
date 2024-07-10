@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink , useLocation} from "react-router-dom"
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { btnVariant } from "../constants/animations"
@@ -10,24 +10,48 @@ function Navigation() {
   const [animate, setAnimate] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const location = useLocation();
+  useEffect(()=>{
+    const nav = document.querySelector("#navigation");
+    console.log(location.pathname , 'location event');
+    if(location.pathname == '/'){
+      nav.classList.remove("bg-primaryColor-5");
+    }
+    else{
+      nav.classList.add("bg-primaryColor-5");
+    }
+  },[location])
 
   useEffect(() => {
     function updateScreenWidth() {
       setScreenWidth(window.innerWidth)
     }
+    function updateNavColor (){
+
+      const navigation = document.querySelector("#navigation");
+      if(window.scrollY > 700 && location.pathname == '/'){
+        navigation.classList.add('bg-primaryColor-5')
+      }
+      else {
+        navigation.classList.remove('bg-primaryColor-5')
+      }
+     
+    }
 
     window.addEventListener("resize", updateScreenWidth)
+    document.addEventListener("scroll", updateNavColor)
 
     // Cleanup function to remove the event listener
     return () => {
       window.removeEventListener("resize", updateScreenWidth)
+      window.removeEventListener("scroll", updateNavColor)
     }
   }, [])
 
   return (
     <>
-      <section className=" fixed right-0 z-50 left-0 top-0  ">
-        <nav className="bg-primaryColor-5 flex justify-between pr-4 w-full shadow-md shadow-green-600 ">
+      <section >
+        <nav className="   fixed right-0 z-50 left-0 top-0  flex justify-between pr-4 w-full shadow-md  " id="navigation">
           <img src={logo} className=" h-14  pr-2" />
 
           {screenWidth < 700 ? (
