@@ -110,23 +110,7 @@ function Footer() {
                 src={logo}
                 className="h-14 w-100 relative top-[75px] left-[200px] max-sm:left-[50px] max-sm:top-[20px]"
               />
-              <div className="inline-grid grid-cols-1 text-white pl-[13%] py-[5%] gap-[25%]">
-                <div className="font-montserrat font-bold text-center relative max-sm:right-[107px] max-sm: top-[60px] max-sm:text-[10px]">
-                  DOWNLOAD APP
-                </div>
-                <NavLink to="/">
-                  <img
-                    src={PlaystoreTransparent}
-                    className="max-h-12 shadow-sm hover:shadow-white rounded-lg max-sm:h-7 relative max-sm:right-[107px] max-sm:top-[10px]"
-                  />
-                </NavLink>
-                <NavLink to="/">
-                  <img
-                    src={AppStoreTransparent}
-                    className="max-h-12 shadow-sm hover:shadow-white rounded-lg max-sm:h-7 relative max-sm:right-[107px] max-sm:bottom-[40px]"
-                  />
-                </NavLink>
-              </div>
+              
               <div className="inline-grid grid-cols-1 text-white pl-[10%] py-[4%] max-w-[50%] relative max-sm:right-[90px] max-sm:text-100">
                 <a
                   className="font-raleway font-thin pt-[15%] pb-[7%]"
