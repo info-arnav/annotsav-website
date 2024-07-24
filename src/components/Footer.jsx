@@ -69,23 +69,7 @@ function Footer() {
                   Reach Us
                 </NavLink>
               </div>
-              <div className="inline-grid grid-cols-1 text-white pl-[13%] py-[5%] gap-[25%]">
-                <div className="font-montserrat font-bold text-center">
-                  DOWNLOAD APP
-                </div>
-                <NavLink to="/">
-                  <img
-                    src={PlaystoreTransparent}
-                    className="max-h-12 shadow-sm hover:shadow-white rounded-lg"
-                  />
-                </NavLink>
-                <NavLink to="/">
-                  <img
-                    src={AppStoreTransparent}
-                    className="max-h-12 shadow-sm hover:shadow-white rounded-lg"
-                  />
-                </NavLink>
-              </div>
+              
               <div className="inline-grid grid-cols-1 text-white pl-[13%] py-[4%] max-w-[28%]">
                 <a
                   className="font-raleway font-thin pt-[15%] pb-[7%]"

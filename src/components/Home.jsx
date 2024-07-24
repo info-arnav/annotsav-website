@@ -23,8 +23,7 @@ function Home() {
           nourish the soil
         </div>
         <div className=" absolute bottom-0 left-0 cursor-pointer pb-9 flex ">
-        <img src={appstore} className="h-16  ml-[3%]" />
-        <img src={playstore} className="h-16 " />
+    
       </div>
       </div>
 
