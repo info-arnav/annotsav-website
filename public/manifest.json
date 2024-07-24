@@ -12,6 +12,15 @@
         "sizes": "any",
         "type": "image/png"
       }
-    ]
+,
+{
+  "src": "/logo_black.png",
+  "sizes": "1080x1080",
+  "type": "image/png"
+}  ,{
+  "src": "/annotsav.png",
+  "sizes": "164x174",
+  "type": "image/png"
+}  ]
   }
   
